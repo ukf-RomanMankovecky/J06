@@ -1,0 +1,32 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.shape.Line?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="5">
+
+    <VBox>
+        <VBox>
+            <Line layoutX="50.0" layoutY="50.0" endX="1000" strokeWidth="5"/>
+            <Label fx:id="cityAtStart" style="-fx-font-size: 40"/>
+            <Label fx:id="firstDate" style="-fx-font-size: 40"/>
+            <Label fx:id="secondDate" style="-fx-font-size: 40"/>
+            <Label fx:id="thirdDate" style="-fx-font-size: 40"/>
+            <Line layoutX="50.0" layoutY="50.0" endX="1000" strokeWidth="5"/>
+            <Label fx:id="secondCity" style="-fx-font-size: 30"/>
+            <Label fx:id="secondCityDate1" style="-fx-font-size: 30"/>
+            <Label fx:id="secondCityDate2" style="-fx-font-size: 30"/>
+            <Label fx:id="secondCityDate3" style="-fx-font-size: 30"/>
+            <Line layoutX="50.0" layoutY="50.0" endX="1000" strokeWidth="5"/>
+        </VBox>
+        <VBox spacing="10" alignment="bottom_left" >
+            <TextField fx:id="CommandPane" promptText="Write command" maxWidth="200"/>
+            <Label>Zadajte mesto pre ktoré chcete zobraziť počasie.</Label>
+            <Button text="Hladaj" onAction="#find"/>
+        </VBox>
+    </VBox>
+
+</GridPane>
